@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="positiveFloat">
+    <xs:restriction base="xs:float">
+      <xs:minInclusive value="0.01"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="article">
+    <xs:choice minOccurs="1" maxOccurs="unbounded">
+      <xs:element name="h1" type="xs:string" minOccurs="0" maxOccurs="1" />
+      <xs:element name="h2" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="p" minOccurs="0" maxOccurs="unbounded">
+        <xs:complexType>
+          <xs:complexContent mixed="true">
+            <xs:restriction base="xs:anyType">
+              <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="b" />
+                <xs:element name="i" />
+                <xs:element name="a" />
+              </xs:choice>
+            </xs:restriction>
+          </xs:complexContent>
+        </xs:complexType>
+      </xs:element>
+    </xs:choice>
+  </xs:complexType>
+
+  <xs:element name="feed">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="date" type="xs:date"/>
+        <xs:element name="offers">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="offer" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="identificators">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="local" type="xs:string" />
+                          <xs:element name="remote" type="xs:string" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="type">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:enumeration value="sell" />
+                          <xs:enumeration value="rent" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="price">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="value" type="xs:positiveInteger" />
+                          <xs:element name="unit">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                                <xs:enumeration value="usd" />
+                                <xs:enumeration value="eur" />
+                                <xs:enumeration value="rub" />
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="property">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="type">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                                <xs:enumeration value="apartment" />
+                                <xs:enumeration value="apartment:flat" />
+                                <xs:enumeration value="apartment:loft" />
+                                <xs:enumeration value="apartment:penthouse" />
+                                <xs:enumeration value="house" />
+                                <xs:enumeration value="house:villa" />
+                                <xs:enumeration value="house:manor" />
+                                <xs:enumeration value="house:chalet" />
+                                <xs:enumeration value="house:cottage" />
+                                <xs:enumeration value="house:townhouse" />
+                                <xs:enumeration value="castle" />
+                                <xs:enumeration value="commercial" />
+                                <xs:enumeration value="commercial:hotel" />
+                                <xs:enumeration value="commercial:pension" />
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                          <xs:element name="location">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="latitude">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:double">
+                                      <xs:minInclusive value="-90.0"/>
+                                      <xs:maxInclusive value="90.0"/>
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="longitude">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:double">
+                                      <xs:minInclusive value="-180.0"/>
+                                      <xs:maxInclusive value="180.0"/>
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="address">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="ru" type="xs:string" />
+                                      <xs:element name="en" type="xs:string" />
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="title">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="ru" type="xs:string" />
+                                <xs:element name="en" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="article">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="ru" type="article" />
+                                <xs:element name="en" type="article" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="images">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="image" minOccurs="0" maxOccurs="unbounded" type="xs:anyURI" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="properties">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="area">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="gross" type="positiveFloat" />
+                                      <xs:element name="living" type="positiveFloat" />
+                                      <xs:element name="kitchen" type="positiveFloat" />
+                                      <xs:element name="land" type="positiveFloat" />
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="rooms">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="total" type="xs:positiveInteger" />
+                                      <xs:element name="living" type="xs:positiveInteger" />
+                                      <xs:element name="kitchens" type="xs:positiveInteger" />
+                                      <xs:element name="bathrooms">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="total" type="xs:positiveInteger" />
+                                            <xs:element name="toilets" type="xs:positiveInteger" />
+                                            <xs:element name="bathrooms" type="xs:positiveInteger" />
+                                            <xs:element name="combined" type="xs:positiveInteger" />
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="building">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="status">
+                                        <xs:simpleType>
+                                          <xs:restriction base="xs:string">
+                                            <xs:enumeration value="project" />
+                                            <xs:enumeration value="construction" />
+                                            <xs:enumeration value="white_walls" />
+                                            <xs:enumeration value="furnished" />
+                                            <xs:enumeration value="ready" />
+                                            <xs:enumeration value="commissioned" />
+                                          </xs:restriction>
+                                        </xs:simpleType>
+                                      </xs:element>
+                                      <xs:element name="material">
+                                        <xs:simpleType>
+                                          <xs:restriction base="xs:string">
+                                            <xs:enumeration value="brick" />
+                                            <xs:enumeration value="coquina" />
+                                            <xs:enumeration value="wood" />
+                                            <xs:enumeration value="beton" />
+                                          </xs:restriction>
+                                        </xs:simpleType>
+                                      </xs:element>
+                                      <xs:element name="year">
+                                        <xs:simpleType>
+                                          <xs:restriction base="xs:integer">
+                                            <xs:minInclusive value="1000"/>
+                                            <xs:maxInclusive value="2100"/>
+                                          </xs:restriction>
+                                        </xs:simpleType>
+                                      </xs:element>
+                                      <xs:element name="floor">
+                                        <xs:simpleType>
+                                          <xs:restriction base="xs:integer">
+                                            <xs:minInclusive value="1"/>
+                                            <xs:maxInclusive value="100"/>
+                                          </xs:restriction>
+                                        </xs:simpleType>
+                                      </xs:element>
+                                      <xs:element name="floors">
+                                        <xs:simpleType>
+                                          <xs:restriction base="xs:integer">
+                                            <xs:minInclusive value="1"/>
+                                            <xs:maxInclusive value="100"/>
+                                          </xs:restriction>
+                                        </xs:simpleType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="tags">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="tag" minOccurs="0" maxOccurs="unbounded">
+                                  <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                      <xs:enumeration value="yard" />
+                                      <xs:enumeration value="garage" />
+                                      <xs:enumeration value="sauna" />
+                                      <xs:enumeration value="parking" />
+                                      <xs:enumeration value="golf" />
+                                      <xs:enumeration value="pond" />
+                                      <xs:enumeration value="pool" />
+                                      <xs:enumeration value="court" />
+                                      <xs:enumeration value="furniture" />
+                                      <xs:enumeration value="near_sea" />
+                                      <xs:enumeration value="near_mountain" />
+                                      <xs:enumeration value="smart_home" />
+                                      <xs:enumeration value="cabinet" />
+                                      <xs:enumeration value="signalling" />
+                                      <xs:enumeration value="fireplace" />
+                                      <xs:enumeration value="parquet" />
+                                      <xs:enumeration value="patio" />
+                                      <xs:enumeration value="balcony" />
+                                      <xs:enumeration value="gym" />
+                                      <xs:enumeration value="autonom_heating" />
+                                      <xs:enumeration value="central_heating" />
+                                      <xs:enumeration value="downtown" />
+                                      <xs:enumeration value="park" />
+                                      <xs:enumeration value="view" />
+                                      <xs:enumeration value="hunting" />
+                                      <xs:enumeration value="fishing" />
+                                      <xs:enumeration value="horses" />
+                                      <xs:enumeration value="conditioning" />
+                                      <xs:enumeration value="climate_control" />
+                                      <xs:enumeration value="kitchen_area" />
+                                      <xs:enumeration value="office_building" />
+                                      <xs:enumeration value="commercial_center" />
+                                      <xs:enumeration value="production" />
+                                      <xs:enumeration value="cafe" />
+                                      <xs:enumeration value="typical_repair" />
+                                      <xs:enumeration value="premium_repair" />
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
