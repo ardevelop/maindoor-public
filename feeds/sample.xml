@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/ardevelop/maindoor-public/master/feeds/schema.xsd">
+      xsi:noNamespaceSchemaLocation="schema.xsd">
     <date>2015-01-01</date>
     <offers>
         <offer>
