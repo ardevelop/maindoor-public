@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:noNamespaceSchemaLocation="https://github.com/difiz/maindoor-public/blob/master/feeds/schema.xsd">
+<feed xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://github.com/difiz/maindoor-public/blob/master/feeds/schema.xsd">
     <date>2015-01-01</date>
     <offers>
         <offer>
-            <identificators>
+            <identifiers>
                 <local>1</local>
                 <remote>1</remote>
-            </identificators>
+            </identifiers>
             <type>sell</type>
             <price>
                 <value>100000</value>
