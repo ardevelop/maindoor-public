@@ -16,7 +16,7 @@
               <xs:element name="offer" minOccurs="0" maxOccurs="unbounded">
                 <xs:complexType>
                   <xs:choice minOccurs="0" maxOccurs="unbounded">
-                    <xs:element name="identificators">
+                    <xs:element name="identifiers">
                       <xs:complexType>
                         <xs:choice minOccurs="0" maxOccurs="unbounded">
                           <xs:element name="local" type="xs:string" minOccurs="0" maxOccurs="1" />

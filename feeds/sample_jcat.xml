@@ -4,9 +4,9 @@
     <date>2014-01-01</date>
     <offers>
         <offer>
-            <identificators>
+            <identifiers>
                 <remote>224863</remote>
-            </identificators>
+            </identifiers>
             <price>
                 <unit>eur</unit>
                 <value>270000</value>
@@ -75,9 +75,9 @@
             <type>sell</type>
         </offer>
         <offer>
-            <identificators>
+            <identifiers>
                 <remote>225211</remote>
-            </identificators>
+            </identifiers>
             <price>
                 <unit>eur</unit>
                 <value>221300</value>
@@ -129,9 +129,9 @@
             <type>sell</type>
         </offer>
         <offer>
-            <identificators>
+            <identifiers>
                 <remote>220605</remote>
-            </identificators>
+            </identifiers>
             <price>
                 <unit>eur</unit>
                 <value>3295000</value>
@@ -202,9 +202,9 @@
             <type>sell</type>
         </offer>
         <offer>
-            <identificators>
+            <identifiers>
                 <remote>227014</remote>
-            </identificators>
+            </identifiers>
             <price>
                 <unit>eur</unit>
                 <value>895000</value>
@@ -282,9 +282,9 @@
             <type>sell</type>
         </offer>
         <offer>
-            <identificators>
+            <identifiers>
                 <remote>227435</remote>
-            </identificators>
+            </identifiers>
             <price>
                 <unit>eur</unit>
                 <value>215000</value>
@@ -346,9 +346,9 @@
             <type>sell</type>
         </offer>
         <offer>
-            <identificators>
+            <identifiers>
                 <remote>227900</remote>
-            </identificators>
+            </identifiers>
             <price>
                 <unit>eur</unit>
                 <value>47300</value>
@@ -401,9 +401,9 @@
             <type>sell</type>
         </offer>
         <offer>
-            <identificators>
+            <identifiers>
                 <remote>227936</remote>
-            </identificators>
+            </identifiers>
             <price>
                 <unit>eur</unit>
                 <value>62344</value>
@@ -465,9 +465,9 @@
             <type>sell</type>
         </offer>
         <offer>
-            <identificators>
+            <identifiers>
                 <remote>228607</remote>
-            </identificators>
+            </identifiers>
             <price>
                 <unit>eur</unit>
                 <value>104000</value>
@@ -528,9 +528,9 @@
             <type>sell</type>
         </offer>
         <offer>
-            <identificators>
+            <identifiers>
                 <remote>228621</remote>
-            </identificators>
+            </identifiers>
             <price>
                 <unit>eur</unit>
                 <value>141500</value>
@@ -593,9 +593,9 @@
             <type>sell</type>
         </offer>
         <offer>
-            <identificators>
+            <identifiers>
                 <remote>228631</remote>
-            </identificators>
+            </identifiers>
             <price>
                 <unit>eur</unit>
                 <value>378000</value>
@@ -651,9 +651,9 @@
             <type>sell</type>
         </offer>
         <offer>
-            <identificators>
+            <identifiers>
                 <remote>228641</remote>
-            </identificators>
+            </identifiers>
             <price>
                 <unit>eur</unit>
                 <value>96500</value>
@@ -716,9 +716,9 @@
             <type>sell</type>
         </offer>
         <offer>
-            <identificators>
+            <identifiers>
                 <remote>228657</remote>
-            </identificators>
+            </identifiers>
             <price>
                 <unit>eur</unit>
                 <value>72000</value>
@@ -771,9 +771,9 @@
             <type>sell</type>
         </offer>
         <offer>
-            <identificators>
+            <identifiers>
                 <remote>228670</remote>
-            </identificators>
+            </identifiers>
             <price>
                 <unit>eur</unit>
                 <value>134300</value>
@@ -834,9 +834,9 @@
             <type>sell</type>
         </offer>
         <offer>
-            <identificators>
+            <identifiers>
                 <remote>228686</remote>
-            </identificators>
+            </identifiers>
             <price>
                 <unit>eur</unit>
                 <value>325300</value>
@@ -895,9 +895,9 @@
             <type>sell</type>
         </offer>
         <offer>
-            <identificators>
+            <identifiers>
                 <remote>229242</remote>
-            </identificators>
+            </identifiers>
             <price>
                 <unit>eur</unit>
                 <value>86100</value>
@@ -951,9 +951,9 @@
             <type>sell</type>
         </offer>
         <offer>
-            <identificators>
+            <identifiers>
                 <remote>229349</remote>
-            </identificators>
+            </identifiers>
             <price>
                 <unit>eur</unit>
                 <value>300300</value>
@@ -1022,9 +1022,9 @@ Flora - &#1101;&#1090;&#1086; &#1085;&#1086;&#1074;&#1072;&#1103;, &#1087;&#1086
             <type>sell</type>
         </offer>
         <offer>
-            <identificators>
+            <identifiers>
                 <remote>229351</remote>
-            </identificators>
+            </identifiers>
             <price>
                 <unit>eur</unit>
                 <value>214000</value>
@@ -1085,9 +1085,9 @@ Flora - &#1101;&#1090;&#1086; &#1085;&#1086;&#1074;&#1072;&#1103;, &#1087;&#1086
             <type>sell</type>
         </offer>
         <offer>
-            <identificators>
+            <identifiers>
                 <remote>231515</remote>
-            </identificators>
+            </identifiers>
             <price>
                 <unit>eur</unit>
                 <value>150000</value>
@@ -1150,9 +1150,9 @@ Flora - &#1101;&#1090;&#1086; &#1085;&#1086;&#1074;&#1072;&#1103;, &#1087;&#1086
             <type>sell</type>
         </offer>
         <offer>
-            <identificators>
+            <identifiers>
                 <remote>231472</remote>
-            </identificators>
+            </identifiers>
             <price>
                 <unit>eur</unit>
                 <value>250000</value>
@@ -1229,9 +1229,9 @@ Flora - &#1101;&#1090;&#1086; &#1085;&#1086;&#1074;&#1072;&#1103;, &#1087;&#1086
             <type>sell</type>
         </offer>
         <offer>
-            <identificators>
+            <identifiers>
                 <remote>231433</remote>
-            </identificators>
+            </identifiers>
             <price>
                 <unit>eur</unit>
                 <value>220000</value>
@@ -1294,9 +1294,9 @@ Flora - &#1101;&#1090;&#1086; &#1085;&#1086;&#1074;&#1072;&#1103;, &#1087;&#1086
             <type>sell</type>
         </offer>
         <offer>
-            <identificators>
+            <identifiers>
                 <remote>231403</remote>
-            </identificators>
+            </identifiers>
             <price>
                 <unit>eur</unit>
                 <value>750000</value>
@@ -1372,9 +1372,9 @@ Flora - &#1101;&#1090;&#1086; &#1085;&#1086;&#1074;&#1072;&#1103;, &#1087;&#1086
             <type>sell</type>
         </offer>
         <offer>
-            <identificators>
+            <identifiers>
                 <remote>233784</remote>
-            </identificators>
+            </identifiers>
             <price>
                 <unit>eur</unit>
                 <value>3000000</value>
@@ -1415,9 +1415,9 @@ Flora - &#1101;&#1090;&#1086; &#1085;&#1086;&#1074;&#1072;&#1103;, &#1087;&#1086
             <type>sell</type>
         </offer>
         <offer>
-            <identificators>
+            <identifiers>
                 <remote>234155</remote>
-            </identificators>
+            </identifiers>
             <price>
                 <unit>eur</unit>
                 <value>80000</value>
@@ -1484,9 +1484,9 @@ Flora - &#1101;&#1090;&#1086; &#1085;&#1086;&#1074;&#1072;&#1103;, &#1087;&#1086
             <type>sell</type>
         </offer>
         <offer>
-            <identificators>
+            <identifiers>
                 <remote>236431</remote>
-            </identificators>
+            </identifiers>
             <price>
                 <unit>usd</unit>
                 <value>495000</value>
@@ -1550,9 +1550,9 @@ Flora - &#1101;&#1090;&#1086; &#1085;&#1086;&#1074;&#1072;&#1103;, &#1087;&#1086
             <type>sell</type>
         </offer>
         <offer>
-            <identificators>
+            <identifiers>
                 <remote>229763</remote>
-            </identificators>
+            </identifiers>
             <price>
                 <unit>eur</unit>
                 <value>280000</value>
@@ -1622,9 +1622,9 @@ Flora - &#1101;&#1090;&#1086; &#1085;&#1086;&#1074;&#1072;&#1103;, &#1087;&#1086
             <type>sell</type>
         </offer>
         <offer>
-            <identificators>
+            <identifiers>
                 <remote>237261</remote>
-            </identificators>
+            </identifiers>
             <price>
                 <unit>eur</unit>
                 <value>1600000</value>
@@ -1698,9 +1698,9 @@ Flora - &#1101;&#1090;&#1086; &#1085;&#1086;&#1074;&#1072;&#1103;, &#1087;&#1086
             <type>sell</type>
         </offer>
         <offer>
-            <identificators>
+            <identifiers>
                 <remote>237270</remote>
-            </identificators>
+            </identifiers>
             <price>
                 <unit>eur</unit>
                 <value>440600</value>
@@ -1759,9 +1759,9 @@ Flora - &#1101;&#1090;&#1086; &#1085;&#1086;&#1074;&#1072;&#1103;, &#1087;&#1086
             <type>sell</type>
         </offer>
         <offer>
-            <identificators>
+            <identifiers>
                 <remote>237287</remote>
-            </identificators>
+            </identifiers>
             <price>
                 <unit>eur</unit>
                 <value>910000</value>
@@ -1813,9 +1813,9 @@ Flora - &#1101;&#1090;&#1086; &#1085;&#1086;&#1074;&#1072;&#1103;, &#1087;&#1086
             <type>sell</type>
         </offer>
         <offer>
-            <identificators>
+            <identifiers>
                 <remote>238295</remote>
-            </identificators>
+            </identifiers>
             <price>
                 <unit>eur</unit>
                 <value>240000</value>
@@ -1851,9 +1851,9 @@ Flora - &#1101;&#1090;&#1086; &#1085;&#1086;&#1074;&#1072;&#1103;, &#1087;&#1086
             <type>sell</type>
         </offer>
         <offer>
-            <identificators>
+            <identifiers>
                 <remote>238130</remote>
-            </identificators>
+            </identifiers>
             <price>
                 <unit>eur</unit>
                 <value>55000</value>
@@ -1909,9 +1909,9 @@ Flora - &#1101;&#1090;&#1086; &#1085;&#1086;&#1074;&#1072;&#1103;, &#1087;&#1086
             <type>sell</type>
         </offer>
         <offer>
-            <identificators>
+            <identifiers>
                 <remote>232320</remote>
-            </identificators>
+            </identifiers>
             <price>
                 <unit>rub</unit>
             </price>
@@ -1978,9 +1978,9 @@ Flora - &#1101;&#1090;&#1086; &#1085;&#1086;&#1074;&#1072;&#1103;, &#1087;&#1086
             <type>rent</type>
         </offer>
         <offer>
-            <identificators>
+            <identifiers>
                 <remote>239628</remote>
-            </identificators>
+            </identifiers>
             <price>
                 <unit>eur</unit>
                 <value>150000</value>
@@ -2037,9 +2037,9 @@ Flora - &#1101;&#1090;&#1086; &#1085;&#1086;&#1074;&#1072;&#1103;, &#1087;&#1086
             <type>sell</type>
         </offer>
         <offer>
-            <identificators>
+            <identifiers>
                 <remote>238950</remote>
-            </identificators>
+            </identifiers>
             <price>
                 <unit>eur</unit>
                 <value>150000</value>

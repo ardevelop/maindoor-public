@@ -156,7 +156,7 @@ for element in root.getchildren():
             property_tags.append("furnished")
 
         out.write(lxml_dumps({
-            "identificators": {
+            "identifiers": {
                 "remote": remote_id
             },
             "type": offer_type,
