@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:noNamespaceSchemaLocation="schema.xsd">
+      xsi:noNamespaceSchemaLocation="https://github.com/difiz/maindoor-public/blob/master/feeds/schema.xsd">
     <date>2015-01-01</date>
     <offers>
         <offer>
@@ -28,29 +28,8 @@
                     <en>Luxurious Chalet in the prestigious area</en>
                 </title>
                 <article>
-                    <ru>
-                        <h1>Шикарный шале в престижной зоне</h1>
-                        <h2>Современный шале класса люкс</h2>
-                        <p>Этот шикарный шале расположен в самом лучшем районе города Ла Массана в 5 минутах от
-                           спортивно-развлекательного центра Аньёс-Парк (Anyos Park), в 10 минутах от канатной дороги
-                           Ла Массаны, ведущей к лыжным трассам Вальнорда и в 5 минутах от единственной в Княжестве
-                           частной и престижной международной школы «Col.legi dels Pirineus».</p>
-                        <h2>Современный шале класса люкс</h2>
-                        <p>Современного стиля комфортабельный шале с отделкой класса люкс находится в привилегированной
-                            зоне Ла Массаны, местности –Аньёс. Прекрасные виды на горы. Местонахождение и стиль делают
-                            шале уникальным в этом районе.</p>
-                    </ru>
-                    <en>
-                        <h1>Luxurious Chalet in the prestigious area</h1>
-                        <h2>Modern luxury chalets</h2>
-                        <p>This luxurious Chalet is located in the best area of La Massana 5 minutes from the sports
-                           and entertainment centre anyós Park (Anyos Park, 10 minutes from the cable car to La Massana,
-                           leading to the ski slopes of Vallnord and 5 minutes from the only in the Principality of
-                           private and prestigious international school "Col.legi dels Pirineus".</p>
-                        <p>Modern style comfortable Chalet with luxury finishes is located in a privileged area of
-                           La Massana, location-agnès. Beautiful mountain views. The location and style make the Chalet
-                           is unique in the area.</p>
-                    </en>
+                    <ru>Современного стиля комфортабельный шале с отделкой класса люкс находится в привилегированной зоне Ла Массаны, местности –Аньёс. Прекрасные виды на горы. Местонахождение и стиль делают шале уникальным в этом районе.</ru>
+                    <en>Modern style comfortable Chalet with luxury finishes is located in a privileged area of La Massana, location-agnès. Beautiful mountain views. The location and style make the Chalet is unique in the area.</en>
                 </article>
                 <images>
                     <image>http://static.maindoor.ru/dcf91d545ec811e48e28005056006cc7.JPG</image>
