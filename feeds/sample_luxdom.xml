@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://github.com/difiz/maindoor-public/blob/master/feeds/schema.xsd">
+<date>2014-01-01</date>
+<offers>
+    <offer>
+        <property>
+            <title>
+                <ru>Квартира</ru>
+                <en>Flat</en>
+            </title>
+            <tags>
+                <tag>balcony</tag>
+            </tags>
+            <location>
+                <latitude>55.7617020906</latitude>
+                <longitude>37.6062011719</longitude>
+            </location>
+            <images>
+                <image>http://www.luxdom.ru/images/objects/object_buy_759/1221%20(1).jpg</image>
+                <image>http://www.luxdom.ru/images/objects/object_buy_759/1221%20(3).jpg</image>
+                <image>http://www.luxdom.ru/images/objects/object_buy_759/1221%20(4).jpg</image>
+                <image>http://www.luxdom.ru/images/objects/object_buy_759/1221%20(5).jpg</image>
+                <image>http://www.luxdom.ru/images/objects/object_buy_759/1221%20(2).jpg</image>
+                <image>http://www.luxdom.ru/images/objects/object_buy_759/1221.jpg</image>
+                <image>http://www.luxdom.ru/images/objects/object_buy_759/DSC06777_s.jpg</image>
+                <image>http://www.luxdom.ru/images/objects/object_buy_759/DSC06778_s.jpg</image>
+                <image>http://www.luxdom.ru/images/objects/object_buy_759/DSC06779_s.jpg</image>
+            </images>
+            <article>
+                <ru>Доходный дом купца Филатова, парадный подъезд, сделан ремонт, 3 спальни, кухня-гостиная, 2 санузла, 2-сторонняя квартира, вид на Храм Христа Спасителя, МИД, Кремль, свободна. В подъездах установлены домофоны, работает консьерж. Инфраструктура обжитого района, в шаговой доступности находится храм Христа Спасителя. </ru>
+            </article>
+            <type>apartment:flat</type>
+            <properties>
+                <building>
+                    <floors>5</floors>
+                    <floor>4</floor>
+                </building>
+                <rooms>
+                    <living>4</living>
+                    <bathrooms>
+                        <total>2</total>
+                        <combined>2</combined>
+                    </bathrooms>
+                </rooms>
+                <area>
+                    <gross>154.0</gross>
+                    <kitchen>18.0</kitchen>
+                    <living>86.2</living>
+                </area>
+            </properties>
+        </property>
+        <price>
+            <unit>usd</unit>
+            <value>2200000</value>
+        </price>
+        <identifiers>
+            <remote>1151</remote>
+        </identifiers>
+        <type>sell</type>
+    </offer>
+</offers>
+</feed>

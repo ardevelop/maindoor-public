@@ -101,7 +101,7 @@ def get(parent, modifier, *path):
 xml_stream = urllib.urlopen(url)
 root = lxml.etree.fromstring(xml_stream.read())
 out = open("/tmp/sample.xml", "w+")
-out.write("<?xml version=\"1.0\" encoding=\"utf-8\"?>")
+out.write("<?xml version=\"1.0\" encoding=\"utf-8\"?>\n")
 out.write("<feed xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:noNamespaceSchemaLocation=\"%s\">" % xsd)
 out.write("<date>2014-01-01</date>")
 out.write("<offers>")
@@ -116,7 +116,19 @@ for element in root.getchildren():
 
         property_type, property_type_title_ru, property_type_title_en = property_types.get(get(element, str, "type"))
 
-        property_article_ru = get(element, str, "description_full")
+        property_article_ru = (get(element, str, "description_full") or "").replace("\n", "<br>") + "<br>"
+
+        contact_value = get(element, str, "contact", "lastname")
+        if contact_value:
+            property_article_ru += "<br>Контактное лицо: %s" % contact_value
+
+        contact_value = get(element, str, "contact", "email")
+        if contact_value:
+            property_article_ru += "<br>Электронная почта: %s" % contact_value
+
+        contact_value = get(element, str, "contact", "phones", "phone")
+        if contact_value:
+            property_article_ru += "<br>Телефон: %s" % contact_value
 
         element_photos = element.find("photos")
         if element_photos is not None:
