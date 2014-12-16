@@ -100,6 +100,9 @@
                                     </xs:choice>
                                   </xs:complexType>
                                 </xs:element>
+                                <xs:element name="country" type="xs:string" />
+                                <xs:element name="region" type="xs:string" />
+                                <xs:element name="location" type="xs:string" />
                               </xs:choice>
                             </xs:complexType>
                           </xs:element>
@@ -165,7 +168,7 @@
                                         <xs:simpleType>
                                           <xs:restriction base="xs:string">
                                             <xs:enumeration value="project" />
-                                            <xs:enumeration value="Земельный участок" />
+                                            <xs:enumeration value="construction" />
                                             <xs:enumeration value="white_walls" />
                                             <xs:enumeration value="furnished" />
                                             <xs:enumeration value="ready" />
